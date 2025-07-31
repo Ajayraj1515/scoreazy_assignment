@@ -1,0 +1,653 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8faff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.relative { position: relative; }
+.z-10 { z-index: 10; }
+.z-20 { z-index: 20; }
+.overflow-hidden { overflow: hidden; }
+.opacity-90 { opacity: 0.9; }
+.opacity-20 { opacity: 0.2; }
+.hidden-md { display: none; }
+
+.header {
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.header-logo-container {
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+}
+.header-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font:38px;
+}
+.score-text {
+    color: #000;
+}
+.eazy-text {
+    color: #2d4d39;
+}
+
+.hero-section {
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.hero-heading {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease-out forwards;
+}
+.hero-heading-highlight {
+    color: #fcd34d;
+}
+.hero-paragraph {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+    animation: fadeIn 1s ease-out forwards;
+}
+.hero-abstract-shape-wrapper {
+    position: absolute;
+    inset: 0;
+}
+.hero-abstract-shape {
+    position: absolute;
+    border-radius: 9999px;
+    mix-blend-mode: overlay;
+    animation: float 6s ease-in-out infinite;
+}
+.hero-shape-1 {
+    top: 20%;
+    left: 10%;
+    width: 8rem;
+    height: 8rem;
+    background-color: white;
+}
+.hero-shape-2 {
+    bottom: 25%;
+    right: 15%;
+    width: 10rem;
+    height: 10rem;
+    background-color: #fcd34d;
+    animation-delay: 1s;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #8b5cf6, #4f46e5);
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+    text-decoration: none;
+    display: inline-block;
+    animation: bounceIn 1s ease-out forwards;
+    font-size: 0.9rem;
+}
+.btn-primary:hover {
+    background: linear-gradient(to right, #7c3aed, #4338ca);
+    transform: scale(1.05);
+}
+.btn-cta-alt {
+    background-color: #facc15;
+    color: #4c1d95;
+    transition: background-color 0.3s ease-in-out;
+}
+.btn-cta-alt:hover {
+    background-color: #eab308;
+}
+
+.section-heading {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.section-heading.purple {
+    color: #4c1d95;
+}
+
+.card {
+    background-color: white;
+    padding: 1.2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease-in-out;
+    transform: translateY(0);
+}
+.card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(-0.25rem);
+}
+.card.border-gray {
+    border: 1px solid #e5e7eb;
+}
+.card.border-purple {
+    border: 1px solid #ddd6fe;
+}
+
+.about-course-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin-top: -3rem;
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 20;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.about-course-paragraph {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-course-grid {
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+    grid-template-columns: 1fr;
+}
+.about-course-list-heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+.about-course-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #4b5563;
+    font-size: 0.95rem;
+    padding-left: 0;
+}
+.about-course-list li {
+    margin-bottom: 0.5rem;
+}
+.about-course-list li:last-child {
+    margin-bottom: 0;
+}
+.about-course-image {
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.benefits-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.benefits-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+}
+.benefit-icon {
+    color: #9333ea;
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+.benefit-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.benefit-description {
+    color: #4b5563;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.curriculum-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #f5f3ff;
+    border-radius: 0.75rem;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.curriculum-paragraph {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.curriculum-grid {
+    display: grid;
+    gap: 1.5rem;
+    justify-content: center;
+    grid-template-columns: 1fr;
+}
+.module-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #6d28d9;
+    margin-bottom: 0.5rem;
+}
+.module-description {
+    color: #4b5563;
+    font-size: 0.9rem;
+}
+
+.testimonials-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.testimonials-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+}
+.testimonial-text {
+    color: #4b5563;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+.testimonial-author {
+    font-weight: 600;
+    color: #1f2937;
+    font-size: 0.9rem;
+}
+
+.cta-section {
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+.cta-heading {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.cta-paragraph {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+.faq-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: white;
+}
+.faq-items-container {
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+.faq-item {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.faq-item + .faq-item {
+    margin-top: 1rem;
+}
+
+.faq-question-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    transition: background-color 0.3s ease;
+}
+.faq-question-toggle:hover {
+    background-color: #f3f4f6;
+}
+
+.faq-question {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.faq-icon {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #6A82FB;
+    margin-left: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 1rem;
+}
+
+.faq-item.active .faq-answer-content {
+    max-height: 500px;
+    padding-bottom: 1rem;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    color: #4b5563;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.footer-links-container {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+}
+.footer-link {
+    color: #9ca3af;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    text-decoration: none;
+}
+.footer-link:hover {
+    color: white;
+}
+.footer-separator {
+    color: #6b7280;
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 1rem 3rem;
+    }
+    .header-logo {
+        margin-right: 0.75rem;
+    }
+    .btn-primary {
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+    }
+    .hero-section {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    .hero-heading {
+        font-size: 3.75rem;
+        margin-bottom: 1.5rem;
+    }
+    .hero-paragraph {
+        font-size: 1.25rem;
+        margin-bottom: 2.5rem;
+    }
+    .hero-shape-1 {
+        top: 25%;
+        left: 25%;
+        width: 12rem;
+        height: 12rem;
+    }
+    .hero-shape-2 {
+        bottom: 33.333%;
+        right: 33.333%;
+        width: 16rem;
+        height: 16rem;
+    }
+    .hidden-md {
+        display: block;
+    }
+    .section-heading {
+        font-size: 2.25rem;
+    }
+    .about-course-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        margin-top: -4rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .about-course-paragraph {
+        font-size: 1.125rem;
+        margin-bottom: 3rem;
+    }
+    .about-course-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .about-course-list-heading {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .about-course-list {
+        font-size: 1.125rem;
+    }
+    .about-course-list li {
+        margin-bottom: 0.75rem;
+    }
+    .about-course-image {
+        margin-top: 0;
+    }
+
+    .benefits-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .benefits-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin-top: 3rem;
+    }
+    .benefit-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .benefit-title {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+    .benefit-description {
+        font-size: 1rem;
+    }
+
+    .curriculum-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .curriculum-paragraph {
+        font-size: 1.125rem;
+        margin-bottom: 3rem;
+    }
+    .curriculum-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .module-title {
+        font-size: 1.125rem;
+    }
+    .module-description {
+        font-size: 1rem;
+    }
+
+    .testimonials-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .testimonials-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 3rem;
+    }
+    .testimonial-text {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .testimonial-author {
+        font-size: 1rem;
+    }
+
+    .cta-section {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    .cta-heading {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    .cta-paragraph {
+        font-size: 1.25rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .faq-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .faq-items-container {
+        margin-top: 3rem;
+    }
+    .faq-item + .faq-item {
+        margin-top: 1.5rem;
+    }
+    .faq-question-toggle {
+        padding: 1.25rem;
+        font-size: 1.25rem;
+    }
+    .faq-icon {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+    .faq-answer-content {
+        padding: 0 1.25rem;
+    }
+    .faq-item.active .faq-answer-content {
+        padding-bottom: 1.25rem;
+    }
+    .faq-answer {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .footer-links-container {
+        margin-top: 1rem;
+        font-size: 0.875rem;
+    }
+    .footer-link {
+        color: #9ca3af;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        text-decoration: none;
+    }
+    .footer-link:hover {
+        color: white;
+    }
+    .footer-separator {
+        color: #6b7280;
+    }
+}
+
+@media (min-width: 1024px) {
+    .curriculum-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes bounceIn {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% { opacity: 0; transform: scale3d(0.3, 0.3, 0.3); }
+    20% { transform: scale3d(1.1, 1.1, 1.1); }
+    40% { transform: scale3d(0.9, 0.9, 0.9); }
+    60% { opacity: 1; transform: scale3d(1.03, 1.03, 1.03); }
+    80% { transform: scale3d(0.97, 0.97, 0.97); }
+    100% { opacity: 1; transform: scale3d(1, 1, 1); }
+}
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
